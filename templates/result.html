@@ -1,0 +1,23 @@
+<html>
+    <h2>
+        final results
+    </h2>
+    <body>
+        {#<!-- the person is {{result}} -->
+         <!-- {% if result>=50 %}#}
+         {#<h1>Your result is passed</h1>
+         {#{% else %}
+         {#<h1>Your result is failed</h1>#}
+         {#{% endif %} -->
+        
+        <!-- iterate through dictionary -->#}
+         <table>
+        {% for key ,value in result.items() %}
+         <tr>
+            <th>{{key}}</th>
+            <th>{{value}}</th>
+         </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
